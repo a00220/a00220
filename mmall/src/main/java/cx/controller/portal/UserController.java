@@ -23,7 +23,7 @@ public class UserController {
 	@Autowired
 	private UserService userService;
 
-	@RequestMapping(value = "login.do",method = RequestMethod.GET)
+	@RequestMapping(value = "login.do", method = RequestMethod.GET)
 	public ServerResponse<User> login(HttpSession session, String username, String password) {
 		ServerResponse serverResponse = userService.login(username, password);
 		if (serverResponse.isSuccess()) {
@@ -45,8 +45,8 @@ public class UserController {
 
 	@RequestMapping(value = "check_valid.do")
 	@ResponseBody
-	public ServerResponse<String> checkValid(String str,String type){
-		return userService.checkValid(str,type);
+	public ServerResponse<String> checkValid(String str, String type) {
+		return userService.checkValid(str, type);
 	}
 
 	@RequestMapping("get_user_info.do")
@@ -59,10 +59,10 @@ public class UserController {
 	}
 
 	@RequestMapping(value = "get_information.do")
-	public ServerResponse<User> get_information(HttpSession session){
-		User currentUser = (User)session.getAttribute(Const.CURRENT_USER);
-		if(currentUser == null){
-			return ServerResponse.ErrorCodeMessage(ResponseCode.NEED_LOGIN.getCode(),"未登录,需要强制登录status=10");
+	public ServerResponse<User> get_information(HttpSession session) {
+		User currentUser = (User) session.getAttribute(Const.CURRENT_USER);
+		if (currentUser == null) {
+			return ServerResponse.ErrorCodeMessage(ResponseCode.NEED_LOGIN.getCode(), "未登录,需要强制登录status=10");
 		}
 		return userService.getInformation(currentUser.getId());
 	}
@@ -79,35 +79,34 @@ public class UserController {
 	}
 
 
-	@RequestMapping(value = "forget_reset_password.do",method = RequestMethod.POST)
+	@RequestMapping(value = "forget_reset_password.do", method = RequestMethod.POST)
 	public ServerResponse<String> forgetRestPassword(String username, String passwordNew, String forget) {
 		return userService.forgetResetPassword(username, passwordNew, forget);
 	}
 
 
-
 	@RequestMapping(value = "reset_password.do")
-	public ServerResponse<String> resetPassword(HttpSession session,String passwordOld,String passwordNew){
-		User user = (User)session.getAttribute(Const.CURRENT_USER);
-		if(user == null){
+	public ServerResponse<String> resetPassword(HttpSession session, String passwordOld, String passwordNew) {
+		User user = (User) session.getAttribute(Const.CURRENT_USER);
+		if (user == null) {
 			return ServerResponse.ErrorMessage("用户未登录");
 		}
-		return userService.resetPassword(passwordOld,passwordNew,user);
+		return userService.resetPassword(passwordOld, passwordNew, user);
 	}
 
 
 	@RequestMapping(value = "update_information.do")
-	public ServerResponse<User> update_information(HttpSession session,User user){
-		User currentUser = (User)session.getAttribute(Const.CURRENT_USER);
-		if(currentUser == null){
+	public ServerResponse<User> update_information(HttpSession session, User user) {
+		User currentUser = (User) session.getAttribute(Const.CURRENT_USER);
+		if (currentUser == null) {
 			return ServerResponse.ErrorMessage("用户未登录");
 		}
 		user.setId(currentUser.getId());
 		user.setUsername(currentUser.getUsername());
 		ServerResponse<User> response = userService.updateInformation(user);
-		if(response.isSuccess()){
+		if (response.isSuccess()) {
 			response.getData().setUsername(currentUser.getUsername());
-			session.setAttribute(Const.CURRENT_USER,response.getData());
+			session.setAttribute(Const.CURRENT_USER, response.getData());
 		}
 		return response;
 	}

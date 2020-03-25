@@ -43,7 +43,7 @@ public class CategoryManageController {
 
 
 	@RequestMapping("get_category.do")
-	public ServerResponse adminGetChildrenParallelCategory(@RequestParam(value = "categoryId", defaultValue ="0") Integer categoryId) {
+	public ServerResponse adminGetChildrenParallelCategory(@RequestParam(value = "categoryId", defaultValue = "0") Integer categoryId) {
 		String role = UUIDUtil.getKey("aop");
 		if (Const.SUCCESS.equals(role)) {
 			//查询子节点的category,并且不递归,保持平级
@@ -53,7 +53,7 @@ public class CategoryManageController {
 	}
 
 	@RequestMapping("get_deep_category.do")
-	public ServerResponse adminGetCategoryAndDeepChildrenCategory(@RequestParam(value = "categoryId", defaultValue ="0") Integer categoryId) {
+	public ServerResponse adminGetCategoryAndDeepChildrenCategory(@RequestParam(value = "categoryId", defaultValue = "0") Integer categoryId) {
 		String role = UUIDUtil.getKey("aop");
 		if (Const.SUCCESS.equals(role)) {
 			//查询子节点的id和递归子节点的Id

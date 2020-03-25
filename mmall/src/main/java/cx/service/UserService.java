@@ -6,7 +6,7 @@ import cx.pojo.User;
 import javax.servlet.http.HttpSession;
 
 public interface UserService {
-	ServerResponse<User> login( String username, String password);
+	ServerResponse<User> login(String username, String password);
 
 	ServerResponse<String> register(User user);
 

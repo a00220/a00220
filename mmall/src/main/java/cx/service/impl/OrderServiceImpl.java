@@ -71,10 +71,6 @@ public class OrderServiceImpl implements OrderService {
 	private ShippingMapper shippingMapper;
 
 
-
-
-
-
 	@Override
 	public ServerResponse createOrder(Integer userId, Integer shippingId) {
 		//从购物车中获取数据
@@ -182,21 +178,22 @@ public class OrderServiceImpl implements OrderService {
 		return ServerResponse.Success(pageInfo);
 	}
 
-	private List<OrderVo> assembleOrderVoList(List<Order> orderList,Integer userId) {
+	private List<OrderVo> assembleOrderVoList(List<Order> orderList, Integer userId) {
 		List<OrderVo> orderVoList = Lists.newArrayList();
 		for (Order order : orderList) {
 			List<OrderItem> orderItemList = Lists.newArrayList();
 			if (userId == null) {
 				//todo 管理员查询不需要userId
 				orderItemList = orderItemMapper.getByOrderNo(order.getOrderNo());
-			}else {
-			    orderItemList = orderItemMapper.getByOrderNoUserId(order.getOrderNo(), userId);
+			} else {
+				orderItemList = orderItemMapper.getByOrderNoUserId(order.getOrderNo(), userId);
 			}
 			OrderVo orderVo = assembleOrderVo(order, orderItemList);
 			orderVoList.add(orderVo);
 		}
 		return orderVoList;
 	}
+
 	private OrderVo assembleOrderVo(Order order, List<OrderItem> orderItemList) {
 		OrderVo orderVo = new OrderVo();
 		orderVo.setOrderNo(order.getOrderNo());
@@ -532,26 +529,24 @@ public class OrderServiceImpl implements OrderService {
 	}
 
 
-
-
 	//backend
 
 	@Override
-	public ServerResponse<PageInfo> manageList(int pageNum, int pageSize){
-		PageHelper.startPage(pageNum,pageSize);
+	public ServerResponse<PageInfo> manageList(int pageNum, int pageSize) {
+		PageHelper.startPage(pageNum, pageSize);
 		List<Order> orderList = orderMapper.selectAllOrder();
-		List<OrderVo> orderVoList = this.assembleOrderVoList(orderList,null);
+		List<OrderVo> orderVoList = this.assembleOrderVoList(orderList, null);
 		PageInfo pageResult = new PageInfo(orderList);
 		pageResult.setList(orderVoList);
 		return ServerResponse.Success(pageResult);
 	}
 
 	@Override
-	public ServerResponse<OrderVo> manageDetail(Long orderNo){
+	public ServerResponse<OrderVo> manageDetail(Long orderNo) {
 		Order order = orderMapper.selectByOrderNo(orderNo);
-		if(order != null){
+		if (order != null) {
 			List<OrderItem> orderItemList = orderItemMapper.getByOrderNo(orderNo);
-			OrderVo orderVo = assembleOrderVo(order,orderItemList);
+			OrderVo orderVo = assembleOrderVo(order, orderItemList);
 			return ServerResponse.Success(orderVo);
 		}
 		return ServerResponse.ErrorMessage("订单不存在");
@@ -559,12 +554,12 @@ public class OrderServiceImpl implements OrderService {
 
 
 	@Override
-	public ServerResponse<PageInfo> manageSearch(Long orderNo,int pageNum,int pageSize){
-		PageHelper.startPage(pageNum,pageSize);
+	public ServerResponse<PageInfo> manageSearch(Long orderNo, int pageNum, int pageSize) {
+		PageHelper.startPage(pageNum, pageSize);
 		Order order = orderMapper.selectByOrderNo(orderNo);
-		if(order != null){
+		if (order != null) {
 			List<OrderItem> orderItemList = orderItemMapper.getByOrderNo(orderNo);
-			OrderVo orderVo = assembleOrderVo(order,orderItemList);
+			OrderVo orderVo = assembleOrderVo(order, orderItemList);
 
 			PageInfo pageResult = new PageInfo(Lists.newArrayList(order));
 			pageResult.setList(Lists.newArrayList(orderVo));
@@ -574,10 +569,10 @@ public class OrderServiceImpl implements OrderService {
 	}
 
 	@Override
-	public ServerResponse<String> manageSendGoods(Long orderNo){
-		Order order= orderMapper.selectByOrderNo(orderNo);
-		if(order != null){
-			if(order.getStatus() == Const.OrderStatusEnum.PAID.getCode()){
+	public ServerResponse<String> manageSendGoods(Long orderNo) {
+		Order order = orderMapper.selectByOrderNo(orderNo);
+		if (order != null) {
+			if (order.getStatus() == Const.OrderStatusEnum.PAID.getCode()) {
 				order.setStatus(Const.OrderStatusEnum.SHIPPED.getCode());
 				order.setSendTime(new Date());
 				orderMapper.updateByPrimaryKeySelective(order);
@@ -586,8 +581,6 @@ public class OrderServiceImpl implements OrderService {
 		}
 		return ServerResponse.ErrorMessage("订单不存在");
 	}
-
-
 
 
 }

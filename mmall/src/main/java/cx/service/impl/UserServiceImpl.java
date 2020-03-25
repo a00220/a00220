@@ -24,18 +24,18 @@ public class UserServiceImpl implements UserService {
 	@Override
 	public ServerResponse<User> login(String username, String password) {
 		int resultCount = userMapper.checkUsername(username);
-		if(resultCount == 0 ){
+		if (resultCount == 0) {
 			return ServerResponse.ErrorMessage("用户名不存在");
 		}
 
 		String md5Password = MD5Util.MD5EncodeUtf8(password);
-		User user  = userMapper.selectLogin(username,md5Password);
-		if(user == null){
+		User user = userMapper.selectLogin(username, md5Password);
+		if (user == null) {
 			return ServerResponse.ErrorMessage("密码错误");
 		}
 
 		user.setPassword(org.apache.commons.lang3.StringUtils.EMPTY);
-		return ServerResponse.Success("登录成功",user);
+		return ServerResponse.Success("登录成功", user);
 	}
 
 
@@ -80,8 +80,6 @@ public class UserServiceImpl implements UserService {
 		}
 		return ServerResponse.ErrorMessage("参数错误");
 	}
-
-
 
 
 	@Override
@@ -138,27 +136,27 @@ public class UserServiceImpl implements UserService {
 	}
 
 	@Override
-	public ServerResponse<String> resetPassword(String passwordOld, String passwordNew, User user){
+	public ServerResponse<String> resetPassword(String passwordOld, String passwordNew, User user) {
 		//防止横向越权,要校验一下这个用户的旧密码,一定要指定是这个用户.因为我们会查询一个count(1),如果不指定id,那么结果就是true啦count>0;
-		int resultCount = userMapper.checkPassword(MD5Util.MD5EncodeUtf8(passwordOld),user.getId());
-		if(resultCount == 0){
+		int resultCount = userMapper.checkPassword(MD5Util.MD5EncodeUtf8(passwordOld), user.getId());
+		if (resultCount == 0) {
 			return ServerResponse.ErrorMessage("旧密码错误");
 		}
 
 		user.setPassword(MD5Util.MD5EncodeUtf8(passwordNew));
 		int updateCount = userMapper.updateByPrimaryKeySelective(user);
-		if(updateCount > 0){
+		if (updateCount > 0) {
 			return ServerResponse.SuccessMessage("密码更新成功");
 		}
 		return ServerResponse.ErrorMessage("密码更新失败");
 	}
 
 	@Override
-	public ServerResponse<User> updateInformation(User user){
+	public ServerResponse<User> updateInformation(User user) {
 		//username是不能被更新的
 		//email也要进行一个校验,校验新的email是不是已经存在,并且存在的email如果相同的话,不能是我们当前的这个用户的.
-		int resultCount = userMapper.checkEmailByUserId(user.getEmail(),user.getId());
-		if(resultCount > 0){
+		int resultCount = userMapper.checkEmailByUserId(user.getEmail(), user.getId());
+		if (resultCount > 0) {
 			return ServerResponse.ErrorMessage("email已存在,请更换email再尝试更新");
 		}
 		User updateUser = new User();
@@ -169,16 +167,16 @@ public class UserServiceImpl implements UserService {
 		updateUser.setAnswer(user.getAnswer());
 
 		int updateCount = userMapper.updateByPrimaryKeySelective(updateUser);
-		if(updateCount > 0){
-			return ServerResponse.Success("更新个人信息成功",updateUser);
+		if (updateCount > 0) {
+			return ServerResponse.Success("更新个人信息成功", updateUser);
 		}
 		return ServerResponse.ErrorMessage("更新个人信息失败");
 	}
 
 	@Override
-	public ServerResponse<User> getInformation(Integer userId){
+	public ServerResponse<User> getInformation(Integer userId) {
 		User user = userMapper.selectByPrimaryKey(userId);
-		if(user == null){
+		if (user == null) {
 			return ServerResponse.ErrorMessage("找不到当前用户");
 		}
 		user.setPassword(org.apache.commons.lang3.StringUtils.EMPTY);
@@ -190,12 +188,13 @@ public class UserServiceImpl implements UserService {
 
 	/**
 	 * 校验是否是管理员
+	 *
 	 * @param user
 	 * @return
 	 */
 	@Override
-	public ServerResponse checkAdminRole(User user){
-		if(user != null && user.getRole().intValue() == Const.Role.ROLE_ADMIN){
+	public ServerResponse checkAdminRole(User user) {
+		if (user != null && user.getRole().intValue() == Const.Role.ROLE_ADMIN) {
 			return ServerResponse.Success();
 		}
 		return ServerResponse.Error();

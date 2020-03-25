@@ -13,9 +13,10 @@ public class PropertiesUtil {
 	private static Logger log = LoggerFactory.getLogger(PropertiesUtil.class);
 
 	private static Properties properties;
+
 	static {
 		String fileName = "mmall.properties";
-		properties	= new Properties();
+		properties = new Properties();
 		InputStream inputStream = PropertiesUtil.class.getResourceAsStream("/" + fileName);
 		try {
 			properties.load(inputStream);
@@ -32,7 +33,7 @@ public class PropertiesUtil {
 		return value.trim();
 	}
 
-	public static String getProperty(String key ,String defaultValue) {
+	public static String getProperty(String key, String defaultValue) {
 		String value = properties.getProperty(key.trim());
 		if (StringUtils.isBlank(value)) {
 			return defaultValue;

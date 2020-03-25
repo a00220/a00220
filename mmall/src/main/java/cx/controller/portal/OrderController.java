@@ -32,82 +32,51 @@ public class OrderController {
 	private static final Logger logger = LoggerFactory.getLogger(OrderController.class);
 
 
-
-
-
-
 	@RequestMapping("create.do")
-	public ServerResponse create(HttpSession session, Integer shippingId){
-		User user = (User)session.getAttribute(Const.CURRENT_USER);
-		if(user ==null){
-			return ServerResponse.ErrorCodeMessage(ResponseCode.NEED_LOGIN.getCode(),ResponseCode.NEED_LOGIN.getDesc());
+	public ServerResponse create(HttpSession session, Integer shippingId) {
+		User user = (User) session.getAttribute(Const.CURRENT_USER);
+		if (user == null) {
+			return ServerResponse.ErrorCodeMessage(ResponseCode.NEED_LOGIN.getCode(), ResponseCode.NEED_LOGIN.getDesc());
 		}
-		return orderService.createOrder(user.getId(),shippingId);
+		return orderService.createOrder(user.getId(), shippingId);
 	}
 
 
 	@RequestMapping("cancel.do")
-	public ServerResponse cancel(HttpSession session, Long orderNo){
-		User user = (User)session.getAttribute(Const.CURRENT_USER);
-		if(user ==null){
-			return ServerResponse.ErrorCodeMessage(ResponseCode.NEED_LOGIN.getCode(),ResponseCode.NEED_LOGIN.getDesc());
+	public ServerResponse cancel(HttpSession session, Long orderNo) {
+		User user = (User) session.getAttribute(Const.CURRENT_USER);
+		if (user == null) {
+			return ServerResponse.ErrorCodeMessage(ResponseCode.NEED_LOGIN.getCode(), ResponseCode.NEED_LOGIN.getDesc());
 		}
-		return orderService.cancel(user.getId(),orderNo);
+		return orderService.cancel(user.getId(), orderNo);
 	}
 
 	@RequestMapping("get_order_cart_product.do")
-	public ServerResponse getOrderCartProduct(HttpSession session){
-		User user = (User)session.getAttribute(Const.CURRENT_USER);
-		if(user ==null){
-			return ServerResponse.ErrorCodeMessage(ResponseCode.NEED_LOGIN.getCode(),ResponseCode.NEED_LOGIN.getDesc());
+	public ServerResponse getOrderCartProduct(HttpSession session) {
+		User user = (User) session.getAttribute(Const.CURRENT_USER);
+		if (user == null) {
+			return ServerResponse.ErrorCodeMessage(ResponseCode.NEED_LOGIN.getCode(), ResponseCode.NEED_LOGIN.getDesc());
 		}
 		return orderService.getOrderCartProduct(user.getId());
 	}
 
 	@RequestMapping("detail.do")
-	public ServerResponse detail(HttpSession session,Long orderNo){
-		User user = (User)session.getAttribute(Const.CURRENT_USER);
-		if(user ==null){
-			return ServerResponse.ErrorCodeMessage(ResponseCode.NEED_LOGIN.getCode(),ResponseCode.NEED_LOGIN.getDesc());
+	public ServerResponse detail(HttpSession session, Long orderNo) {
+		User user = (User) session.getAttribute(Const.CURRENT_USER);
+		if (user == null) {
+			return ServerResponse.ErrorCodeMessage(ResponseCode.NEED_LOGIN.getCode(), ResponseCode.NEED_LOGIN.getDesc());
 		}
-		return orderService.getOrderDetail(user.getId(),orderNo);
+		return orderService.getOrderDetail(user.getId(), orderNo);
 	}
 
 	@RequestMapping("list.do")
-	public ServerResponse list(HttpSession session, @RequestParam(value = "pageNum",defaultValue = "1") int pageNum, @RequestParam(value = "pageSize",defaultValue = "10") int pageSize){
-		User user = (User)session.getAttribute(Const.CURRENT_USER);
-		if(user ==null){
-			return ServerResponse.ErrorCodeMessage(ResponseCode.NEED_LOGIN.getCode(),ResponseCode.NEED_LOGIN.getDesc());
+	public ServerResponse list(HttpSession session, @RequestParam(value = "pageNum", defaultValue = "1") int pageNum, @RequestParam(value = "pageSize", defaultValue = "10") int pageSize) {
+		User user = (User) session.getAttribute(Const.CURRENT_USER);
+		if (user == null) {
+			return ServerResponse.ErrorCodeMessage(ResponseCode.NEED_LOGIN.getCode(), ResponseCode.NEED_LOGIN.getDesc());
 		}
-		return orderService.getOrderList(user.getId(),pageNum,pageSize);
+		return orderService.getOrderList(user.getId(), pageNum, pageSize);
 	}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 	@RequestMapping("pay.do")
@@ -149,7 +118,7 @@ public class OrderController {
 		} catch (AlipayApiException e) {
 			logger.error("支付宝验证回调异常", e);
 		}
-           //todo 验证各种数据
+		//todo 验证各种数据
 
 
 		//
@@ -162,17 +131,16 @@ public class OrderController {
 	}
 
 
-
 	@RequestMapping("query_order_pay_status.do")
 
-	public ServerResponse<Boolean> queryOrderPayStatus(HttpSession session, Long orderNo){
-		User user = (User)session.getAttribute(Const.CURRENT_USER);
-		if(user ==null){
-			return ServerResponse.ErrorCodeMessage(ResponseCode.NEED_LOGIN.getCode(),ResponseCode.NEED_LOGIN.getDesc());
+	public ServerResponse<Boolean> queryOrderPayStatus(HttpSession session, Long orderNo) {
+		User user = (User) session.getAttribute(Const.CURRENT_USER);
+		if (user == null) {
+			return ServerResponse.ErrorCodeMessage(ResponseCode.NEED_LOGIN.getCode(), ResponseCode.NEED_LOGIN.getDesc());
 		}
 
-		ServerResponse serverResponse = orderService.queryOrderPayStatus(user.getId(),orderNo);
-		if(serverResponse.isSuccess()){
+		ServerResponse serverResponse = orderService.queryOrderPayStatus(user.getId(), orderNo);
+		if (serverResponse.isSuccess()) {
 			return ServerResponse.Success(true);
 		}
 		return ServerResponse.Success(false);

@@ -6,7 +6,118 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="148bc166-a3ca-4ea1-87c0-eaf98c107be9" name="Default Changelist" comment="" />
+    <list default="true" id="148bc166-a3ca-4ea1-87c0-eaf98c107be9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../02.SSM整合开发办公系统核心模块/SSM整合开发源代码/SSM整合开发源代码/oa/oa.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02.SSM整合开发办公系统核心模块/SSM整合开发源代码/SSM整合开发源代码/oa/oa_biz/oa_biz.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02.SSM整合开发办公系统核心模块/SSM整合开发源代码/SSM整合开发源代码/oa/oa_dao/oa_dao.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02.SSM整合开发办公系统核心模块/SSM整合开发源代码/SSM整合开发源代码/oa/oa_web/oa_web.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../临时视频/02.(可以再看看)Spring MVC数据绑定/SpringMVC数据绑定源码/SpringMVC数据绑定源码/SpringMVCDataBind/SpringMVCDataBind.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../临时视频/03.Spring AOP/Spring AOP源码/Spring AOP源码/spring_aop/spring_aop/spring_aop.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../临时视频/04.基于AspectJ的AOP开发/基于AspectJ的AOP开发源码/基于AspectJ的AOP开发源码/spring_aspect/spring_aspect/spring_aspect.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../临时视频/05.JDBC Template/JDBC Template源码/JDBC Template源码/sc/sc/sc.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../临时视频/08.Spring+MyBatis整合开发案例/Spring+MyBatis整合开发人员信息管理系统源码/Spring+MyBatis整合开发人员信息管理系统源码/sm/sm/sm.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../临时视频/08.Spring+MyBatis整合开发案例/Spring+MyBatis整合开发人员信息管理系统源码/Spring+MyBatis整合开发人员信息管理系统源码/sm/sm/sm_service/sm_service.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../临时视频/08.Spring+MyBatis整合开发案例/Spring+MyBatis整合开发人员信息管理系统源码/Spring+MyBatis整合开发人员信息管理系统源码/sm/sm/sm_web/sm_web.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/alipay/demo/trade/DemoHbRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/alipay/demo/trade/DemoHbRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/alipay/demo/trade/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/alipay/demo/trade/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cx/common/Const.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cx/common/Const.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cx/common/ResponseCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cx/common/ResponseCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cx/common/ServerResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cx/common/ServerResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cx/controller/backend/CategoryManageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cx/controller/backend/CategoryManageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cx/controller/backend/OrderManageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cx/controller/backend/OrderManageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cx/controller/backend/ProductManageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cx/controller/backend/ProductManageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cx/controller/backend/UserManageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cx/controller/backend/UserManageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cx/controller/portal/CartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cx/controller/portal/CartController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cx/controller/portal/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cx/controller/portal/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cx/controller/portal/ShippingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cx/controller/portal/ShippingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cx/controller/portal/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cx/controller/portal/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cx/dao/CartMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cx/dao/CartMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cx/dao/CategoryMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cx/dao/CategoryMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cx/dao/OrderItemMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cx/dao/OrderItemMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cx/dao/OrderMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cx/dao/OrderMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cx/dao/PayInfoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cx/dao/PayInfoMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cx/dao/ProductMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cx/dao/ProductMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cx/dao/ShippingMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cx/dao/ShippingMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cx/dao/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cx/dao/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cx/pojo/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cx/pojo/Cart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cx/pojo/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cx/pojo/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cx/pojo/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cx/pojo/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cx/pojo/OrderItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cx/pojo/OrderItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cx/pojo/PayInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cx/pojo/PayInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cx/pojo/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cx/pojo/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cx/pojo/Shipping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cx/pojo/Shipping.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cx/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cx/pojo/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cx/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cx/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cx/service/impl/CategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cx/service/impl/CategoryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cx/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cx/service/impl/OrderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cx/service/impl/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cx/service/impl/ProductServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cx/service/impl/ShippingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cx/service/impl/ShippingServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cx/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cx/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cx/utils/BigDecimalUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cx/utils/BigDecimalUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cx/utils/DateTimeUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cx/utils/DateTimeUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cx/utils/FTPUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cx/utils/FTPUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cx/utils/PropertiesUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cx/utils/PropertiesUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cx/utils/UUIDUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cx/utils/UUIDUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cx/vo/CartProductVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cx/vo/CartProductVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cx/vo/CartVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cx/vo/CartVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cx/vo/OrderItemVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cx/vo/OrderItemVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cx/vo/OrderProductVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cx/vo/OrderProductVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cx/vo/OrderVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cx/vo/OrderVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cx/vo/ProductDetailVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cx/vo/ProductDetailVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cx/vo/ProductListVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cx/vo/ProductListVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cx/vo/ShippingVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cx/vo/ShippingVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/datasource.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/datasource.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/CartMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/CartMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/CategoryMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/CategoryMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/OrderItemMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/OrderItemMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/OrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/OrderMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/PayInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/PayInfoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/ProductMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/ProductMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/ShippingMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/ShippingMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mmall.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mmall.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/springmvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/springmvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/zfbinfo.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/zfbinfo.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cx/controller/portal/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cx/controller/portal/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cx/utils/FTPUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cx/utils/FTPUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/datasource.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/datasource.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mappers/CartMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mappers/CartMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mappers/CategoryMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mappers/CategoryMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mappers/OrderItemMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mappers/OrderItemMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mappers/OrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mappers/OrderMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mappers/PayInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mappers/PayInfoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mappers/ProductMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mappers/ProductMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mappers/ShippingMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mappers/ShippingMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mappers/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mappers/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mmall.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mmall.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/springmvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/springmvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/zfbinfo.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/zfbinfo.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/datasource.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/datasource.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/mappers/CartMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/mappers/CartMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/mappers/CategoryMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/mappers/CategoryMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/mappers/OrderItemMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/mappers/OrderItemMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/mappers/OrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/mappers/OrderMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/mappers/PayInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/mappers/PayInfoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/mappers/ProductMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/mappers/ProductMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/mappers/ShippingMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/mappers/ShippingMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/mappers/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/mappers/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/mmall.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/mmall.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/springmvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/springmvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/zfbinfo.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/classes/zfbinfo.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mmall/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/mmall/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mmall/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/mmall/index.jsp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,6 +146,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -61,6 +175,7 @@
     <option name="vmOptions" value="-DarchetypeCatalog=internal" />
   </component>
   <component name="ProjectId" id="1X0vJSM0UUw30VYdIvZqIx30Uzc" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -68,6 +183,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib" />
@@ -96,7 +212,7 @@
       <recent name="C:\Users\bbysd\Desktop\mmall\src\main\resources\mappers" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 7.0.99">
+  <component name="RunManager" selected="Application.test">
     <configuration name="UUIDUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="cx.utils.UUIDUtil" />
       <module name="mmall" />
@@ -106,6 +222,13 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test" />
+      <module name="mmall" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -248,10 +371,12 @@
     </configuration>
     <list>
       <item itemvalue="Application.UUIDUtil" />
+      <item itemvalue="Application.test" />
       <item itemvalue="Tomcat Server.Tomcat 7.0.99" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.test" />
         <item itemvalue="Application.UUIDUtil" />
       </list>
     </recent_temporary>
@@ -327,6 +452,12 @@
       <workItem from="1582551635818" duration="2054000" />
       <workItem from="1582698381628" duration="30000" />
       <workItem from="1582701089310" duration="2476000" />
+      <workItem from="1582811735782" duration="699000" />
+      <workItem from="1583680211970" duration="230000" />
+      <workItem from="1583747628233" duration="1352000" />
+      <workItem from="1584017321908" duration="545000" />
+      <workItem from="1585107497972" duration="46000" />
+      <workItem from="1585108383328" duration="72000" />
     </task>
     <servers />
   </component>
@@ -370,86 +501,86 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="221" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1581604055435" />
-    <state width="1488" height="259" key="GridCell.Tab.0.bottom" timestamp="1582557233682">
+    <state width="1867" height="269" key="GridCell.Tab.0.bottom" timestamp="1583748285403">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1488" height="259" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582557233682" />
-    <state width="1488" height="259" key="GridCell.Tab.0.center" timestamp="1582557233682">
+    <state width="1867" height="269" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1583748285403" />
+    <state width="1867" height="269" key="GridCell.Tab.0.center" timestamp="1583748285403">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1488" height="259" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582557233682" />
-    <state width="1488" height="259" key="GridCell.Tab.0.left" timestamp="1582557233682">
+    <state width="1867" height="269" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1583748285403" />
+    <state width="1867" height="269" key="GridCell.Tab.0.left" timestamp="1583748285402">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1488" height="259" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582557233682" />
-    <state width="1488" height="259" key="GridCell.Tab.0.right" timestamp="1582557233682">
+    <state width="1867" height="269" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1583748285402" />
+    <state width="1867" height="269" key="GridCell.Tab.0.right" timestamp="1583748285403">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1488" height="259" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582557233682" />
-    <state width="1488" height="259" key="GridCell.Tab.1.bottom" timestamp="1582557233682">
+    <state width="1867" height="269" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583748285403" />
+    <state width="1867" height="333" key="GridCell.Tab.1.bottom" timestamp="1583680393947">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1488" height="259" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582557233682" />
-    <state width="1488" height="259" key="GridCell.Tab.1.center" timestamp="1582557233682">
+    <state width="1867" height="333" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1583680393947" />
+    <state width="1867" height="333" key="GridCell.Tab.1.center" timestamp="1583680393947">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1488" height="259" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582557233682" />
-    <state width="1488" height="259" key="GridCell.Tab.1.left" timestamp="1582557233682">
+    <state width="1867" height="333" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1583680393947" />
+    <state width="1867" height="333" key="GridCell.Tab.1.left" timestamp="1583680393947">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1488" height="259" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582557233682" />
-    <state width="1488" height="259" key="GridCell.Tab.1.right" timestamp="1582557233682">
+    <state width="1867" height="333" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1583680393947" />
+    <state width="1867" height="333" key="GridCell.Tab.1.right" timestamp="1583680393947">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1488" height="259" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582557233682" />
-    <state width="1488" height="259" key="GridCell.Tab.2.bottom" timestamp="1582557233682">
+    <state width="1867" height="333" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583680393947" />
+    <state width="1867" height="333" key="GridCell.Tab.2.bottom" timestamp="1583680393947">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1488" height="259" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582557233682" />
-    <state width="1488" height="259" key="GridCell.Tab.2.center" timestamp="1582557233682">
+    <state width="1867" height="333" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1583680393947" />
+    <state width="1867" height="333" key="GridCell.Tab.2.center" timestamp="1583680393947">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1488" height="259" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582557233682" />
-    <state width="1488" height="259" key="GridCell.Tab.2.left" timestamp="1582557233682">
+    <state width="1867" height="333" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1583680393947" />
+    <state width="1867" height="333" key="GridCell.Tab.2.left" timestamp="1583680393947">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1488" height="259" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582557233682" />
-    <state width="1488" height="259" key="GridCell.Tab.2.right" timestamp="1582557233682">
+    <state width="1867" height="333" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1583680393947" />
+    <state width="1867" height="333" key="GridCell.Tab.2.right" timestamp="1583680393947">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1488" height="259" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582557233682" />
-    <state width="1488" height="358" key="GridCell.Tab.3.bottom" timestamp="1582550317652">
+    <state width="1867" height="333" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583680393947" />
+    <state width="1867" height="333" key="GridCell.Tab.3.bottom" timestamp="1583680393947">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1488" height="358" key="GridCell.Tab.3.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582550317652" />
-    <state width="1488" height="358" key="GridCell.Tab.3.center" timestamp="1582550317652">
+    <state width="1867" height="333" key="GridCell.Tab.3.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1583680393947" />
+    <state width="1867" height="333" key="GridCell.Tab.3.center" timestamp="1583680393947">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1488" height="358" key="GridCell.Tab.3.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582550317652" />
-    <state width="1488" height="358" key="GridCell.Tab.3.left" timestamp="1582550317652">
+    <state width="1867" height="333" key="GridCell.Tab.3.center/0.0.1920.1040@0.0.1920.1040" timestamp="1583680393947" />
+    <state width="1867" height="333" key="GridCell.Tab.3.left" timestamp="1583680393947">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1488" height="358" key="GridCell.Tab.3.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582550317652" />
-    <state width="1488" height="358" key="GridCell.Tab.3.right" timestamp="1582550317652">
+    <state width="1867" height="333" key="GridCell.Tab.3.left/0.0.1920.1040@0.0.1920.1040" timestamp="1583680393947" />
+    <state width="1867" height="333" key="GridCell.Tab.3.right" timestamp="1583680393947">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1488" height="358" key="GridCell.Tab.3.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582550317652" />
-    <state width="1488" height="358" key="GridCell.Tab.4.bottom" timestamp="1582550317652">
+    <state width="1867" height="333" key="GridCell.Tab.3.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583680393947" />
+    <state width="1867" height="333" key="GridCell.Tab.4.bottom" timestamp="1583680393947">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1488" height="358" key="GridCell.Tab.4.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582550317652" />
-    <state width="1488" height="358" key="GridCell.Tab.4.center" timestamp="1582550317652">
+    <state width="1867" height="333" key="GridCell.Tab.4.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1583680393947" />
+    <state width="1867" height="333" key="GridCell.Tab.4.center" timestamp="1583680393947">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1488" height="358" key="GridCell.Tab.4.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582550317652" />
-    <state width="1488" height="358" key="GridCell.Tab.4.left" timestamp="1582550317652">
+    <state width="1867" height="333" key="GridCell.Tab.4.center/0.0.1920.1040@0.0.1920.1040" timestamp="1583680393947" />
+    <state width="1867" height="333" key="GridCell.Tab.4.left" timestamp="1583680393947">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1488" height="358" key="GridCell.Tab.4.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582550317652" />
-    <state width="1488" height="358" key="GridCell.Tab.4.right" timestamp="1582550317652">
+    <state width="1867" height="333" key="GridCell.Tab.4.left/0.0.1920.1040@0.0.1920.1040" timestamp="1583680393947" />
+    <state width="1867" height="333" key="GridCell.Tab.4.right" timestamp="1583680393947">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1488" height="358" key="GridCell.Tab.4.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582550317652" />
+    <state width="1867" height="333" key="GridCell.Tab.4.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583680393947" />
     <state width="1488" height="358" key="GridCell.Tab.5.bottom" timestamp="1582550317652">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

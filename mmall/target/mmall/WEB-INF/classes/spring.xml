@@ -6,7 +6,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
 
 
-    <context:component-scan base-package="cx" />
+    <context:component-scan base-package="cx"/>
     <aop:aspectj-autoproxy/>
 
     <bean id="propertyConfigurer"
@@ -75,7 +75,7 @@
     </bean>
 
     <!-- 使用@Transactional进行声明式事务管理需要声明下面这行  为true则是基于类的代理将起作用（需要cglib库）-->
-    <tx:annotation-driven transaction-manager="transactionManager" />
+    <tx:annotation-driven transaction-manager="transactionManager"/>
     <!-- 事务管理 -->
     <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
         <property name="dataSource" ref="dataSource"/>

@@ -22,21 +22,20 @@ public class UserManageController {
 
 
 	@RequestMapping(value = "login.do")
-	public ServerResponse<User> login(String username, String password, HttpSession session){
-		ServerResponse<User> response = userService.login(username,password);
-		if(response.isSuccess()){
+	public ServerResponse<User> login(String username, String password, HttpSession session) {
+		ServerResponse<User> response = userService.login(username, password);
+		if (response.isSuccess()) {
 			User user = response.getData();
-			if(user.getRole() == Const.Role.ROLE_ADMIN){
+			if (user.getRole() == Const.Role.ROLE_ADMIN) {
 				//说明登录的是管理员
-				session.setAttribute(Const.CURRENT_USER,user);
+				session.setAttribute(Const.CURRENT_USER, user);
 				return response;
-			}else{
+			} else {
 				return ServerResponse.ErrorMessage("不是管理员,无法登录");
 			}
 		}
 		return response;
 	}
-
 
 
 }

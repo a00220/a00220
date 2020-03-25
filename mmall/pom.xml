@@ -130,14 +130,14 @@
         </dependency>
 
 
-<!--        StringUtils.empty-->
+        <!--        StringUtils.empty-->
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
             <version>3.5</version>
         </dependency>
 
-<!--        Sets.newHashSet-->
+        <!--        Sets.newHashSet-->
         <dependency>
             <groupId>commons-collections</groupId>
             <artifactId>commons-collections</artifactId>
@@ -177,8 +177,6 @@
             <artifactId>jsqlparser</artifactId>
             <version>0.9.4</version>
         </dependency>
-
-
 
 
         <!-- alipay -->

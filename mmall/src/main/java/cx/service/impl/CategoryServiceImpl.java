@@ -84,8 +84,7 @@ public class CategoryServiceImpl implements CategoryService {
 	}
 
 
-
-	private Set<Category> findChildCategory(Set<Category> categorySet,Integer categoryId) {
+	private Set<Category> findChildCategory(Set<Category> categorySet, Integer categoryId) {
 		Category category = categoryMapper.selectByPrimaryKey(categoryId);
 		if (category != null) {
 			categorySet.add(category);
